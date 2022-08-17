@@ -1,38 +1,99 @@
+#root{
+  margin: 1rem;
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: #E7E7E7;
+  border-radius: 5px 5px 5px 5px;
+  padding-top: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-script {
+  resize: none;
+  width: 35rem;
+  font-size: 1.01rem;
+  text-align: center;
+  color: white;
+  background-color: #404040;
+  border-radius: 5px 5px 5px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.audio-controls {
+  display: flex;
+  width: 30em;
+  margin-bottom: 2rem;
+  padding: 0.5em;
+  justify-content: space-around;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #cfcece9d;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.audio-controls label {
+  margin-right: 5em;
+}
+
+.waveform-container {
+  display: block;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.audio-waveform {
+  display: block;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 10rem;
+}
+
+#amplitude-bar {
+  width: 2em;
+  height: 7.7rem;
+  text-align: right;
+  float: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;  
+  border-top: 1px solid transparent;
+  border-right: 1px solid #cfcece;
 }
 
-.App-link {
-  color: #61dafb;
+#amplitude-bar span {
+  display: block;
+  font-size: 0.7em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.amplitude-line::after {
+  content: "-";
 }
+
+#audio-waveform {
+  width: calc(100% - 2em - 3px);
+  float: left;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #cfcece9d;
+  background-color: #d8d7d763;
+}
+
+#wave-timeline {
+  border-top: 1px solid #cfcece;
+  padding-top: 5px;
+  margin-left: 2em;
+}
+
+.script-waveform {
+  display: block;
+}
+
+.script-canvas {
+  display: block;
+  margin-left: 1.09rem;
+}
+
+
